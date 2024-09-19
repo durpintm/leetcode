@@ -43,5 +43,26 @@ namespace LeetCode
                 index--;
             }
         }
+
+        public static void Merge2(int[] nums1, int m, int[] nums2, int n)
+        {
+            int index = nums1.Length - 1;
+            int p = m - 1;
+            int q = n - 1;
+
+            while(index >= 0)
+            {
+                if (q < 0) break;
+
+                if(p >= 0 && nums1[p] >= nums2[q])
+                {
+                    nums1[index--] = nums1[p--];
+                }
+                else
+                {
+                    nums1[index--] = nums2[q--];
+                }
+            }
+        }
     }
 }
