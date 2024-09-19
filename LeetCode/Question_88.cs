@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    // Merge Sorted Array
     internal class Question_88
     {
-        public void Merge(int[] nums1, int m, int[] nums2, int n)
+        public static void Merge(int[] nums1, int m, int[] nums2, int n)
         {
             int[] combinedArray = new int[m + n];
             int index = m + n - 1;
@@ -37,7 +38,7 @@ namespace LeetCode
 
             while (j >= 0)
             {
-                combinedArray[index] = nums2[j];
+                nums1[index] = nums2[j];
                 j--;
                 index--;
             }
