@@ -11,7 +11,8 @@ public class Program
         //Question_88.Merge2([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3);
         //Question_88.Merge2([0], 0, [1], 1);
 
-        GG_1.Segregate0and1([0, 0, 1, 1, 0]);
+        //GG_1.Segregate0and1([0, 0, 1, 1, 0]);
+        string s = Question_5.LongestPalindrome("sdfgrrgft");
 
         Console.WriteLine();
         Console.ReadKey();
