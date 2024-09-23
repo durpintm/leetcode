@@ -21,9 +21,9 @@ public class Program
 
         //int maxLength = Question_525.FindMaxLength([0, 1, 0, 0, 0, 1, 1, 0, 1]);
 
-        int maxLen = Question_325.lenOfLongSubarr([10, 5, 2, 7, 1, 9], 6, 15);
+        //int maxLen = Question_325.lenOfLongSubarr([10, 5, 2, 7, 1, 9], 6, 15);
 
-
+        int maxLength = Question_128.LongestConsecutive([100, 4, 200, 1, 3, 2]);
         Console.ReadKey();
     }
 
