@@ -15,9 +15,30 @@ public class Program
 
         //string s = Question_5.LongestPalindrome("sdfgrrgft");
 
-        var result = Question_54.SpiralOrder([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]);
+        //var result = Question_54.SpiralOrder([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]);
 
+        int max = GetFrequency([2, 0, 1, 2, 3, 2, 4, 1, 5, 3, 2]);
         Console.WriteLine();
         Console.ReadKey();
+    }
+
+    public static int GetFrequency(int[] array)
+    {
+        Dictionary<int, int> dict = new Dictionary<int, int>();
+
+        foreach (int i in array)
+        {
+            if (dict.ContainsKey(i))
+            {
+                dict[i] += 1;
+            }
+            else
+            {
+                dict[i] = 1;
+
+            }
+        }
+
+        return dict.Values.Max();
     }
 }

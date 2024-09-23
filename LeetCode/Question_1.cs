@@ -9,25 +9,47 @@ namespace LeetCode
     // Two Sum
     internal class Question_1
     {
-        public static int[] TwoSum(int[] numbers, int target)
-        {
+        //public static int[] TwoSum(int[] numbers, int target)
+        //{
 
-            for (int i = 0, j = numbers.Length - 1; i < numbers.Length && j >= 0;)
+        //    for (int i = 0, j = numbers.Length - 1; i < numbers.Length && j >= 0;)
+        //    {
+        //        if (numbers[i] + numbers[j] == target)
+        //        {
+        //            return [i, j];
+        //        }
+        //        else if (numbers[i] + numbers[j] > target)
+        //        {
+        //            j--;
+        //        }
+        //        else
+        //        {
+        //            i++;
+        //        }
+        //    }
+        //    return [0, 0];
+        //}
+
+        public static int[] TwoSum(int[] nums, int target)
+        {
+            Dictionary<int, int> dict = new Dictionary<int, int>();
+
+            for (int i = 0; i < nums.Length; i++)
             {
-                if (numbers[i] + numbers[j] == target)
+                int x = nums[i];
+                int y = target - nums[i];
+                if (dict.ContainsKey(y))
                 {
-                    return [i, j];
+                    return new int[] { i, dict[y] };
                 }
-                else if (numbers[i] + numbers[j] > target)
+
+                if (!dict.ContainsKey(x))
                 {
-                    j--;
-                }
-                else
-                {
-                    i++;
+                    dict.Add(x, i);
                 }
             }
-            return [0, 0];
+
+            return [];
         }
 
     }
