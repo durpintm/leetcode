@@ -17,7 +17,9 @@ public class Program
 
         //var result = Question_54.SpiralOrder([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]);
 
-        int max = GetFrequency([2, 0, 1, 2, 3, 2, 4, 1, 5, 3, 2]);
+        //int max = GetFrequency([2, 0, 1, 2, 3, 2, 4, 1, 5, 3, 2]);
+
+        int maxLength = Question_525.FindMaxLength([0, 1, 0, 0, 0, 1, 1, 0, 1]);
         Console.WriteLine();
         Console.ReadKey();
     }
