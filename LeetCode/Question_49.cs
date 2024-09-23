@@ -8,7 +8,7 @@ namespace LeetCode
 {
     internal class Question_49
     {
-        public IList<IList<string>> GroupAnagrams(string[] strs)
+        public static IList<IList<string>> GroupAnagrams(string[] strs)
         {
             Dictionary<string, List<string>> dict = new Dictionary<string, List<string>>();
 
@@ -18,7 +18,8 @@ namespace LeetCode
 
                 foreach (char ch in str.ToCharArray())
                 {
-                    freq[ch - 'a']++;
+                    int freqIndex = ch - 'a';
+                    freq[freqIndex]++;
                 }
 
                 string freqPattern = "";

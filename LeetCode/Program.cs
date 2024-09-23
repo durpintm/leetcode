@@ -23,7 +23,10 @@ public class Program
 
         //int maxLen = Question_325.lenOfLongSubarr([10, 5, 2, 7, 1, 9], 6, 15);
 
-        int maxLength = Question_128.LongestConsecutive([100, 4, 200, 1, 3, 2]);
+        //int maxLength = Question_128.LongestConsecutive([100, 4, 200, 1, 3, 2]);
+
+        //var data = Question_49.GroupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
+        var data = Question_49.GroupAnagrams(["bdddddddddd", "bbbbbbbbbbc"]);
         Console.ReadKey();
     }
 
