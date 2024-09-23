@@ -19,8 +19,11 @@ public class Program
 
         //int max = GetFrequency([2, 0, 1, 2, 3, 2, 4, 1, 5, 3, 2]);
 
-        int maxLength = Question_525.FindMaxLength([0, 1, 0, 0, 0, 1, 1, 0, 1]);
-        Console.WriteLine();
+        //int maxLength = Question_525.FindMaxLength([0, 1, 0, 0, 0, 1, 1, 0, 1]);
+
+        int maxLen = Question_325.lenOfLongSubarr([10, 5, 2, 7, 1, 9], 6, 15);
+
+
         Console.ReadKey();
     }
 
